@@ -4,7 +4,7 @@
 
 感谢您使用 PlusProComponents。
 
-以下是关于向 PlusProComponents 提交反馈或代码的指南。在向 PlusProComponents 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下内容。
+以下是关于向 plus-three 提交反馈或代码的指南。在向 plus-three 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下内容。
 
 ### Issue 规范
 
@@ -19,7 +19,7 @@
   - `vite`/ `webpack` / `Rollup` / `Vue CLI` 构建工具版本， 是否使用 `CDN`
   - `vue` 版本
   - `element-plus` 版本
-  - `plus-pro-components` 版本
+  - `plus-three` 版本
 
 ## 参与开发
 
@@ -56,7 +56,7 @@
 2. 基于 fork 后仓库的 dev 分支新建一个分支，比如 `feature/docs`。
 3. 在新分支上进行开发，开发完成后，提 Pull Request 到主仓库的 dev 分支。
 4. Pull Request 会在 Review 通过后被合并到主仓库。
-5. 等待 PlusProComponents 发布新版本，一般是每周一次。
+5. 等待 plus-three 发布新版本，一般是每周一次。
 
 ### Pull Request 标题格式
 
@@ -93,7 +93,7 @@ type(ComponentName?)：commit message
 
 ```bash
 # 添加主仓库到 remote
-git remote add upstream https://github.com/plus-pro-components/plus-pro-components.git
+git remote add upstream https://github.com/plus-three/plus-three.git
 
 # 拉取主仓库最新代码
 git fetch upstream
