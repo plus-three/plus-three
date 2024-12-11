@@ -1,3 +1,14 @@
+## [0.0.4](https://github.com/plus-three/plus-three/compare/0.0.3...0.0.4) (2024-12-11)
+
+
+### ✨ Features
+
+* release 0.0.3 ([8ad8d00](https://github.com/plus-three/plus-three/commit/8ad8d00))
+* update package.json ([99b12fd](https://github.com/plus-three/plus-three/commit/99b12fd))
+* update repository ([35a3ea1](https://github.com/plus-three/plus-three/commit/35a3ea1))
+
+
+
 ## [0.0.3](https://github.com/plus-three/plus-three/compare/0.0.2...0.0.3) (2024-12-11)
 
 
@@ -8,7 +19,7 @@
 
 
 
-## [0.0.2](https://github.com/plus-three/plus-three/compare/01cefee...0.0.2) (2024-12-11)
+## [0.0.2](https://github.com/plus-three/plus-three/compare/0.0.1...0.0.2) (2024-12-11)
 
 
 ### ✨ Features
