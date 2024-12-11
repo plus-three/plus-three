@@ -1,0 +1,7 @@
+{
+  "name": "@plus-three/types",
+  "version": "0.0.1",
+  "description": "plus-three types",
+  "license": "MIT",
+  "main": "index.ts"
+}

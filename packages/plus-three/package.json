@@ -1,0 +1,49 @@
+{
+  "name": "plus-three",
+  "version": "0.0.0",
+  "description": "plus-three based threejs",
+  "author": "xiaofei",
+  "copyright": "xiaofei",
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.mjs",
+  "types": "dist/es/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/es/index.d.ts",
+      "import": "./dist/es/index.mjs",
+      "require": "./dist/lib/index.js"
+    },
+    "./es": "./dist/es/index.mjs",
+    "./lib": "./dist/lib/index.js",
+    "./es/*.mjs": "./dist/es/*.mjs",
+    "./es/*": "./dist/es/*.mjs",
+    "./lib/*.js": "./dist/lib/*.js",
+    "./lib/*": "./dist/lib/*.js",
+    "./*": "./dist/*"
+  },
+  "unpkg": "dist/plus-three.js",
+  "jsdelivr": "dist/plus-three.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l-x-f/plus-three.git"
+  },
+  "keywords": [
+    "plus-three",
+    "threejs"
+  ],
+  "dependencies": {
+    "three": "^0.165.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/three": "^0.165.0"
+  }
+}

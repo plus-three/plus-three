@@ -1,0 +1,24 @@
+$primaryColor: #42b883;
+
+// 选
+:root {
+  --vp-c-green: #{$primaryColor};
+  --vp-c-green-light: #2a87f8;
+  --vp-c-green-lighter: #3e93fb;
+
+  --vp-c-green-dark: #046ae7;
+  --vp-c-green-darker: #0362d7;
+  --vp-layout-max-width: 90%;
+  --vp-sidebar-bg-color: #fff;
+  --vp-sidebar-width: 240px;
+  --prism-block-padding-y: 1.2em;
+
+  --vp-c-indigo-1: #{$primaryColor};
+  --vp-c-indigo-3: #{$primaryColor};
+  --vp-c-bg-alt: var(--el-fill-color-light);
+  --vp-c-brand-2: #2a87f8;
+}
+
+.dark {
+  --vp-sidebar-bg-color: #161618;
+}
