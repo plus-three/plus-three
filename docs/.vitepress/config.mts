@@ -1,6 +1,9 @@
 import { defineConfig, HeadConfig } from 'vitepress'
 // import pkg from '../../package.json'
 
+// 生产环境判断
+const isEnvProduction = process.env.NODE_ENV === 'production'
+
 const content = ['plus-three', 'threejs', 'three', 'vue'].toString()
 
 // https://vitepress.dev/reference/site-config
@@ -26,7 +29,8 @@ export default defineConfig({
       }
     ],
     ['meta', { name: 'keywords', content }],
-    ['link', { rel: 'icon', href: '/logo.png' }]
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ...((isEnvProduction ? [['script', { src: '/hmt.js' }]] : []) as unknown as HeadConfig[])
   ],
   lang: 'zh-CN',
   themeConfig: {

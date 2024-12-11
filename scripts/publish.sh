@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-npm run build
+# npm run build
 
 # 修改npm源地址
 npm config get registry
