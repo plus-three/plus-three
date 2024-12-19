@@ -753,8 +753,10 @@ export class PlusThree {
         meList.push(item)
       }
     })
-    const intersect = raycaster.intersectObjects(meList, false)[0] as Partial<Intersection<T>>
-    return intersect || {}
+    const intersect =
+      (raycaster.intersectObjects(meList, false)[0] as Partial<Intersection<T>>) || {}
+    const callbackParams = { event, ...intersect }
+    return callbackParams
   }
 
   /**
