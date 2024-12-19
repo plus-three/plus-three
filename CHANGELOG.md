@@ -1,3 +1,13 @@
+## [0.0.5](https://github.com/plus-three/plus-three/compare/0.0.4...0.0.5) (2024-12-19)
+
+
+### ✨ Features
+
+* on add event params ([e4f817e](https://github.com/plus-three/plus-three/commit/e4f817e))
+* update package.json ([de36854](https://github.com/plus-three/plus-three/commit/de36854))
+
+
+
 ## [0.0.4](https://github.com/plus-three/plus-three/compare/0.0.3...0.0.4) (2024-12-11)
 
 
