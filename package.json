@@ -2,14 +2,10 @@
   "name": "plus-three",
   "version": "0.0.4",
   "description": "plus-three",
+  "private": true,
   "license": "MIT",
   "author": "xiaofei",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "copyright": "xiaofei",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

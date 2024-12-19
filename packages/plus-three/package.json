@@ -22,8 +22,6 @@
     "./lib/*": "./dist/lib/plus-three/*.js",
     "./*": "./dist/*"
   },
-  "unpkg": "dist/plus-three.js",
-  "jsdelivr": "dist/plus-three.js",
   "files": [
     "dist"
   ],
