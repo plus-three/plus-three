@@ -1,6 +1,12 @@
-# 安装
+# 快速开始
 
-## 使用包管理器 <el-tag  effect="dark">推荐</el-tag>
+本节将介绍如何在项目中使用 `plus-three`。
+
+`plus-three `内置里场景，相机，渲染器，控制器等。理论上只需要把模型给到 `plus-three` 就可以展示出来。
+
+## 安装
+
+### 使用包管理器 <el-tag  effect="dark">推荐</el-tag>
 
 **建议您使用包管理器 ([pnpm](https://pnpm.io/)<el-tag  effect="dark">推荐</el-tag> ， [yarn](https://classic.yarnpkg.com/lang/en/)，[npm](https://www.npmjs.com/)) 安装 plus-three**。
 
@@ -20,32 +26,43 @@ npm install  plus-three   --save
 
 :::
 
-## 浏览器直接引入
+## 使用步骤
 
-直接通过浏览器的 HTML 标签导入 plus-three，然后就可以使用全局变量 `PlusProComponents` 了。
+- 1. 导入库
 
-根据不同的 CDN 提供商有不同的引入方式， 我们在这里以[unpkg](https://unpkg.com) 和 [jsDelivr](https://jsdelivr.com) 举例。 你也可以使用其它的 CDN 供应商。
-
-### unpkg
-
-```html{1,1}
-<head>
-   <!--导入plus-three"  -->
-   <script src="//unpkg.com/plus-three"></script>
-</head>
+```ts
+import { PlusThree } from 'plus-three'
 ```
 
-### jsDelivr
+- 2. 创建模型/ 导入模型
 
-```html{1,2}
-<head>
-  <!--导入plus-three"  -->
-  <script src="//cdn.jsdelivr.net/npm/plus-three"></script>
-</head>
+```ts
+import { BoxGeometry, MeshBasicMaterial, Mesh } from 'three'
+
+const geometry = new BoxGeometry(5, 5, 5)
+const material = new MeshBasicMaterial({
+  color: '#00eaff',
+  wireframe: true
+})
+const model = new Mesh(geometry, material)
 ```
 
-::: warning 注意
-默认使用最新版本，使用时建议加上版本号 如使用`0.0.1`版本，防止因版本导致应用出现问题。
+- 3. 设置容器
 
-[https://cdn.jsdelivr.net/npm/plus-three@0.0.1/index.min.js](https://cdn.jsdelivr.net/npm/plus-three@0.0.1/index.min.js)
+```ts
+const container = document.body
+```
+
+- 4. 创建实例
+
+```ts
+const plusThree = new PlusThree(model, container)
+```
+
+## 简单示例
+
+:::demo
+
+home/home
+
 :::

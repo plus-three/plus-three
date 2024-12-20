@@ -11,6 +11,8 @@ import banner2 from 'rollup-plugin-banner2'
 import S from 'string'
 import replace from '@rollup/plugin-replace'
 
+const isDev = process.env.NODE_ENV === 'development'
+
 export const name = 'plus-three'
 
 // 合并路径
@@ -63,12 +65,14 @@ export const pathRewriter = (id: string) => {
 // rollup 配置项
 export const plugins: InputPluginOption[] = [
   // 验证导入的文件
-  eslint({
-    throwOnError: true, // lint 结果有错误将会抛出异常
-    throwOnWarning: true,
-    include: ['packages/**/*.ts'],
-    exclude: ['node_modules/**', 'dist/**', '*.js']
-  }),
+  isDev
+    ? eslint({
+        throwOnError: true, // lint 结果有错误将会抛出异常
+        throwOnWarning: true,
+        include: ['packages/**/*.ts'],
+        exclude: ['node_modules/**', 'dist/**', '*.js']
+      })
+    : null,
 
   // 使得 rollup 支持 commonjs 规范，识别 commonjs 规范的依赖
   commonjs(),

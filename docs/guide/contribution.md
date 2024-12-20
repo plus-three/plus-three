@@ -2,7 +2,7 @@
 
 ### 介绍
 
-感谢您使用 PlusProComponents。
+感谢您使用 plus-three。
 
 以下是关于向 plus-three 提交反馈或代码的指南。在向 plus-three 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下内容。
 
@@ -17,8 +17,6 @@
   - `操作系统` 版本
   - `node` 版本
   - `vite`/ `webpack` / `Rollup` / `Vue CLI` 构建工具版本， 是否使用 `CDN`
-  - `vue` 版本
-  - `element-plus` 版本
   - `plus-three` 版本
 
 ## 参与开发

@@ -1,4 +1,5 @@
 import { defineConfig, HeadConfig } from 'vitepress'
+import { mdPlugin } from './plugins/mdPlugin'
 // import pkg from '../../package.json'
 
 // 生产环境判断
@@ -50,17 +51,14 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' },
+      { text: '示例', link: '/case/' },
       { text: 'API', link: '/api/' }
     ],
     sidebar: {
       '/guide/': [
         {
-          text: '安装',
-          link: '/guide/index'
-        },
-        {
           text: '快速开始',
-          link: '/guide/quickstart'
+          link: '/guide/index'
         },
         {
           text: '开发指南',
@@ -79,11 +77,12 @@ export default defineConfig({
     },
     editLink: {
       text: '在 GitHub 上编辑此页',
-      pattern: 'https://github.com/plus-three/plus-three/edit/dev/docs/:path'
+      pattern: 'https://github.com/plus-three/plus-three/edit/master/docs/:path'
     }
   },
   lastUpdated: true,
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    config: (md: any) => mdPlugin(md)
   }
 })

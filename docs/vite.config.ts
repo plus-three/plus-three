@@ -12,6 +12,13 @@ export default defineConfig(() => {
       host: true,
       port: 3003
     },
-    plugins: [Inspect() as PluginOption, vueJsx() as PluginOption]
+    plugins: [Inspect() as PluginOption, vueJsx() as PluginOption],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'legacy'
+        }
+      }
+    }
   }
 })
