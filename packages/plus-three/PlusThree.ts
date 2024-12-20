@@ -731,7 +731,7 @@ export class PlusThree {
   private select<T extends Object3D = Mesh>(
     event: MouseEvent,
     condition?: (item: T) => boolean
-  ): Partial<Intersection<T>> {
+  ): Partial<Intersection<T> & { event: MouseEvent }> {
     const { offsetX: x, offsetY: y } = event
     const { width, height } = this.renderer.domElement
     const raycaster = new Raycaster()
@@ -755,7 +755,7 @@ export class PlusThree {
     })
     const intersect =
       (raycaster.intersectObjects(meList, false)[0] as Partial<Intersection<T>>) || {}
-    const callbackParams = { event, ...intersect }
+    const callbackParams: Partial<Intersection<T> & { event: MouseEvent }> = { event, ...intersect }
     return callbackParams
   }
 
@@ -766,7 +766,7 @@ export class PlusThree {
    */
   on<T extends Object3D = Mesh>(
     params: keyof HTMLElementEventMap | [keyof HTMLElementEventMap, (item: T) => boolean],
-    callback: (obj: Partial<Intersection<T>>) => void
+    callback: (obj: Partial<Intersection<T> & { event: MouseEvent }>) => void
   ) {
     let eventType: keyof HTMLElementEventMap
     let condition: undefined | ((item: T) => boolean)
