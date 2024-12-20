@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { Group, ColorRepresentation, Color, Clock } from 'three'
+import type { Group, ColorRepresentation } from 'three'
+import { Color, Clock } from 'three'
 import { getBox3 } from './getBox3'
 
 /**

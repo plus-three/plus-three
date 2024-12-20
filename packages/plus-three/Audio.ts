@@ -23,7 +23,7 @@ export const loadAudio = (
   const audioLoader = new AudioLoader()
   audioLoader.load(url, function (buffer) {
     sound.setBuffer(buffer)
-    //播放音量
+    // 播放音量
     sound.setVolume(volume ?? 0.4)
 
     // 设置循环播放

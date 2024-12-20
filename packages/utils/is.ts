@@ -29,32 +29,28 @@ export const isArray = Array.isArray
  * @param val
  * @returns
  */
-export const isMap = (val: any): val is Map<any, any> =>
-  toTypeString(val) === '[object Map]'
+export const isMap = (val: any): val is Map<any, any> => toTypeString(val) === '[object Map]'
 
 /**
  * 判断是否是Set
  * @param val
  * @returns
  */
-export const isSet = (val: any): val is Set<any> =>
-  toTypeString(val) === '[object Set]'
+export const isSet = (val: any): val is Set<any> => toTypeString(val) === '[object Set]'
 
 /**
  * 判断是否是Date
  * @param val
  * @returns
  */
-export const isDate = (val: any): val is Date =>
-  toTypeString(val) === '[object Date]'
+export const isDate = (val: any): val is Date => toTypeString(val) === '[object Date]'
 
 /**
  * 判断是否是Reg
  * @param val
  * @returns
  */
-export const isRegExp = (val: any): val is RegExp =>
-  toTypeString(val) === '[object RegExp]'
+export const isRegExp = (val: any): val is RegExp => toTypeString(val) === '[object RegExp]'
 
 /**
  * 判断是否是函数
@@ -62,8 +58,7 @@ export const isRegExp = (val: any): val is RegExp =>
  * @returns
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
-export const isFunction = (val: any): val is Function =>
-  typeof val === 'function'
+export const isFunction = (val: any): val is Function => typeof val === 'function'
 
 /**
  * 判断是否是字符串
