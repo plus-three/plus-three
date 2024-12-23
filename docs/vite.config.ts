@@ -16,7 +16,7 @@ export default defineConfig(() => {
     css: {
       preprocessorOptions: {
         scss: {
-          api: 'legacy'
+          silenceDeprecations: ['legacy-js-api']
         }
       }
     }
