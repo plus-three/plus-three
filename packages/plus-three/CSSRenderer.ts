@@ -14,7 +14,7 @@ function createCSSRenderer(
   CSSLabelRenderer.domElement.style.left = '0px'
   // //设置.pointerEvents=none，以免模型标签HTML元素遮挡鼠标选择场景模型
   CSSLabelRenderer.domElement.style.pointerEvents = 'none'
-  container.appendChild(CSSLabelRenderer.domElement)
+  container?.appendChild(CSSLabelRenderer.domElement)
   return CSSLabelRenderer
 }
 
