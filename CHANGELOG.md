@@ -1,3 +1,18 @@
+## [0.0.6](https://github.com/plus-three/plus-three/compare/0.0.5...0.0.6) (2025-01-09)
+
+
+### ✨ Features
+
+* udpate types ([39225e1](https://github.com/plus-three/plus-three/commit/39225e1))
+* update CSSRenderer ([4b9f9f5](https://github.com/plus-three/plus-three/commit/4b9f9f5))
+
+
+### 🐛 Bug Fixes
+
+* fix on callback type ([2c2b8fc](https://github.com/plus-three/plus-three/commit/2c2b8fc))
+
+
+
 ## [0.0.5](https://github.com/plus-three/plus-three/compare/0.0.4...0.0.5) (2024-12-19)
 
 
